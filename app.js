@@ -15,8 +15,8 @@ var queryRouter = require("./routes/query");
 
 var app = express();
 
-const url = "<your connection string>";
-const dbName = "your DB name";
+const url = "mongodb://localhost:27017/";
+const dbName = "transportation";
 const client = new MongoClient(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
