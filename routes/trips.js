@@ -1,8 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const { MongoClient } = require("mongodb");
-const url =
-  "mongodb+srv://admin:Abc123456@long-transportations.a4l6l.mongodb.net/";
+const url = "mongodb://localhost:27017/";
 const dbName = "transportation";
 const client = new MongoClient(url, {
   useNewUrlParser: true,
